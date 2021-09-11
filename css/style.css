@@ -1,0 +1,266 @@
+:root {
+    font-size: 1.62rem;
+}
+
+#body {
+    background-image: url('../img/background-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    font-family: 'Special Elite', cursive;
+    text-shadow: -1px -1px 3px rgba(16, 61, 106, 0.8);
+    color: #000;
+}
+
+p {
+    font-family: 'Special Elite', cursive;
+    text-shadow: -1px -1px 3px rgba(16, 61, 106, 0.8);
+    color: #555;
+}
+
+
+/******************************/
+/* GRID BODY */
+/******************************/
+.grid-body {
+    display: grid;
+    grid-template-columns: auto minmax() auto;
+    grid-template-rows: 10vh auto;
+    grid-template-areas:
+    'header header header'
+    'l-nav main r-nav';
+    grid-column-gap: 1vh;
+}
+
+#header {
+    grid-area: header;
+}
+
+#left-nav {
+    grid-area: l-nav;
+}
+
+#right-nav {
+    grid-area: r-nav;
+}
+
+#main {
+    grid-area: main;
+}
+
+#location {
+    position: relative;
+    left: 10vh;
+    bottom: -21vh;
+}
+
+/******************************/
+/* GRID PRIZES */
+/******************************/
+.grid-prizes {
+    display: grid;
+    grid-template-columns: 10vh 10vh;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'autograph'
+    'prizes';
+    grid-gap: 1vh;
+}
+
+#autograph {
+    grid-area: autograph;
+    flex-direction: row;
+}
+
+#prizes {
+    grid-area: prizes;
+    flex-direction: row;
+}
+
+.prizes-miniature {
+    width: 25vh;
+    border-radius: 20px;
+    border: 2px solid #555;
+}
+
+#front-autograph, #front-prizes {
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+    background-color: #555;
+}
+
+#bigautograph, #bigprizes {
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+    border: 5px solid #555;
+    width: 83vh;
+}
+
+/******************************/
+/* GRID CARDS */
+/******************************/
+.grid-cards {
+    display: inline-grid;
+    grid-template-columns: 20vh;
+    grid-template-rows: 20vh;
+    grid-template-areas:
+    'one two three four'
+    'five six seven eight'
+    'nine ten eleven twelve'
+    'thirteen fourteen fifteen sixteen';
+    grid-gap: 1vh;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#ten {
+    grid-area: ten;
+}
+
+#eleven {
+    grid-area: eleven;
+}
+
+#twelve {
+    grid-area: twelve;
+}
+
+#thirteen {
+    grid-area: thirteen;
+}
+
+#fourteen {
+    grid-area: fourteen;
+}
+
+#fifteen {
+    grid-area: fifteen;
+}
+
+#sixteen {
+    grid-area: sixteen;
+}
+
+.miniature {
+    width: 20vh;
+    border-radius: 20px;
+    border: 2px solid #555;
+}
+
+/******************************/
+/* COUNTDOWN */
+/******************************/
+
+#turned {
+    font-size: 4.58rem;
+    font-family: 'Special Elite', cursive;
+    color: #000;
+    position: relative;
+    left: 9vh;
+    bottom: -10vh;
+}
+
+/**************************************************************/
+#front-one, #front-two, #front-three, #front-four, #front-five, #front-six, #front-seven, #front-eight, #front-nine, #front-ten, #front-eleven, #front-twelve, #front-thirteen, #front-fourteen, #front-fifteen, #front-sixteen {
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+    background-color: #555;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#back-one, #back-two, #back-three, #back-four, #back-five, #back-six, #back-seven, #back-eight, #back-nine, #back-ten, #back-eleven, #back-twelve, #back-thirteen, #back-fourteen, #back-fifteen, #back-sixteen, #back-autograph, #back-prizes {
+    box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve, #thirteen, #fourteen, #fifteen, #sixteen, #autograph, #prizes, #alternative, #grid, #center {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    transition: all 0.74s ease-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+/**************************************************************/
+
+.hide {
+    display: none;
+}
+
+.resize-current {
+    width: 30vh;
+    border-radius: 20px;
+}
+
+#current-event {
+    position: relative;
+    left: 5vh;
+    bottom: -18vh;
+}
+
+
+/******************************/
+/* FLIPPING CARDS */
+/******************************/
+
+.flipped {
+    -webkit-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+}
+
+.flippedreverse {
+    -webkit-transform: rotateX(-360deg);
+    -moz-transform: rotateX(-360deg);
+    -ms-transform: rotateX(-360deg);
+    transform: rotateX(-360deg);
+}
+
+
+/******************************/
+/* LOCATION */
+/******************************/
+
+.orange {
+    text-shadow: 0px 0px 9px rgba(227, 144, 28, 0.8);
+    color: #000;
+    font-size: 2.48vh;
+}
