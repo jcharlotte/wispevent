@@ -14,8 +14,8 @@
 - prizes.php allowed to display ranodmly selected winners every prizes
 - the code was made so we could decide at the last minute if people would be allowed to win several big prizes or not
 
-
-
 ---
 
 ***Those 2 pages are not responsie at all, as we used them in local on my main screen. We spent around 7h designing those.***
+
+***Edit: The fishbug was solved, it was a typo in the "timer.js".***

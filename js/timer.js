@@ -116,7 +116,7 @@ ten.addEventListener("click", function(){
 });
 
 eleven.addEventListener("click", function(){
-    if(oneback.classList.contains("hide")){
+    if(elevenback.classList.contains("hide")){
         count = count - 1;
         turned.innerHTML = count; 
         return count;
